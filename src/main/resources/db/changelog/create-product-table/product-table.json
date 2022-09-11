@@ -1,0 +1,38 @@
+{
+  "databaseChangeLog": [
+    {
+      "changeSet": {
+        "author": "Vinicius Chioratto",
+        "changes": [
+          {
+            "createTable": {
+              "columns": [
+                {
+                  "column": {
+                    "constraints": {
+                      "nullable": false,
+                      "primaryKey": true
+                    },
+                    "name": "product_id",
+                    "type": "varchar(255)"
+                  }
+                },
+                {
+                  "column": {
+                    "constraints": {
+                      "nullable": false
+                    },
+                    "name": "product_name",
+                    "type": "varchar(255)"
+                  }
+                }
+              ],
+              "tableName": "product"
+            }
+          }
+        ],
+        "id": "product"
+      }
+    }
+  ]
+}
